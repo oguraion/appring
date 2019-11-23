@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+ .shiwasu{
+  text-align: center;
+  position: relative;
+  padding: 50px;
+  width: 540px;
+  margin: 0 auto;
+}
+
+.shiwasu_path{stroke:#666;
+fill:none;
+stroke-width:1;
+stroke-dasharray: 3000;
+stroke-dashoffset:3000;
+animation: DASH 4s ease-in alternate forwards;
+-webkit-animation:DASH 4s ease-in 0s forwards;
+-o-animation:DASH 4s ease-in 0s forwards;
+animation:DASH 4s ease-in 0s forwards;
+}
+@keyframes DASH{
+0%{stroke-dashoffset:3000;}
+100%{stroke-dashoffset:0;}
+}
+@-moz-keyframes DASH{
+0%{stroke-dashoffset:3000;}
+100%{stroke-dashoffset:0;}
+}
+@-webkit-keyframes DASH{
+0%{stroke-dashoffset:3000;}
+100%{stroke-dashoffset:0;}
+}
+@-o-keyframes DASH{
+0%{stroke-dashoffset:3000;}
+100%{stroke-dashoffset:0;}
+}
+@-ms-keyframes DASHf{
+0%{stroke-dashoffset:3000;}
+100%{stroke-dashoffset:0;
+}
