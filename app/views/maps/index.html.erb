@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="css/r.css">
+  <link rel="stylesheet" href="css/styles2.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,500,900&amp;subset=japanese" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script>
+    $(function() {
+         var gnav = $('.gnav');
+         gnav.css('display','none');
+         $('.gnav-btn').on('click', function() {
+           gnav.slideToggle(500);
+           if ($(this).hasClass('is-open')) {
+             $(this).removeClass('is-open');
+           } else {
+             $(this).addClass('is-open');
+           }
+         });
+   });
+   
+     </script>
+     <script>
+      
+       $(window).scroll(function (){
+         $('.fadein').each(function(){
+             var elemPos = $(this).offset().top,
+                 scroll = $(window).scrollTop(),
+                 windowHeight = $(window).height();
+               if (scroll > elemPos - windowHeight + 100){
+                   $(this).addClass('scrollin');
+                 }
+             });
+         });
+       </script>
+       <script>
+      
+          $(window).scroll(function (){
+            $('.fadein2').each(function(){
+                var elemPos = $(this).offset().top,
+                    scroll = $(window).scrollTop(),
+                    windowHeight = $(window).height();
+                  if (scroll > elemPos - windowHeight + 100){
+                      $(this).addClass('scrollin2');
+                    }
+                });
+            });
+          </script>
+  
+  
+  
+
+</head>
+<body>
+  <div class="beel">
+
+    <div class="qq">
+      <img src="images/header_logo.png" />
+     
+        <div class="nav-wrap">
+          
+            <div class="gnav-btn">
+              <div class="icon-animation">
+                <div class="eee">
+                  
+                  <span class="top"></span>
+                  <span class="middle"></span>
+                  <span class="bottom"></span>
+                </div>
+                </div>
+            </div>
+          
+          <nav>
+            <ul class="gnav">
+              <li><a href="">MOVIE / GRAPHIC</a></li>
+              <li><a href="">PRODUCT</a></li>
+              <li><a href="">HISTORY</a></li>
+              <li><a>CAMPAIGN</a></li>
+              <li><a href="">WORLD LINK</a></li>
+              <li><div class="my-parts"><span></span></div></li>
+            </ul>
+          </nav>
+          
+          
+      
+          
+      </div>
+      <div class="www">
+  
+        <div class="scale">
+            <img src="images/aaa.png">
+        </div>
+        <div class="scale-a">
+          <img src="images/aaaa.png">
+      </div>
+      </div>
+  </div>
+  </div>
+    <div class="qqq">
+
+      <div class="viewer">
+        <ul>
+          <li><img src="images/mv.jpg" /></li>
+          <li> <img src="images/mv2.jpg" /></li>
+        </ul>
+      </div><!--/.viewer-->
+    </div>
+    
+    <script>
+$(function(){
+    var $setElm = $('.viewer'),
+    fadeSpeed = 1500,
+    switchDelay = 5000;
+ 
+    $setElm.each(function(){
+        var targetObj = $(this);
+        var findUl = targetObj.find('ul');
+        var findLi = targetObj.find('li');
+        var findLiFirst = targetObj.find('li:first');
+ 
+        findLi.css({display:'block',opacity:'0',zIndex:'1'});
+        findLiFirst.css({zIndex:'1'}).stop().animate({opacity:'1'},fadeSpeed);
+ 
+        setInterval(function(){
+            findUl.find('li:first-child').animate({opacity:'0'},fadeSpeed).next('li').css({zIndex:'1'}).animate({opacity:'1'},fadeSpeed).end().appendTo(findUl).css({zIndex:'1'});
+        },switchDelay);
+    });
+});
+</script>
+<div class="z">
+
+</div>
+
+  <div class="fadein">
+      <div class="zz"> <img src="images/movie_image1.jpg"></div>
+    </div>
+    <div class="fadein">
+       
+      <div class="zzz"> <img src="images/graphic_image2.jpg"></div>
+      </div>
+      <div class="bigbox">
+          <div class="bigbox2">
+        <div class="kk">
+    <div>
+      
+    </div>
+          <div class="fadein">
+            <div class="ll"> <img src="images/ll.jpg"></div>
+           
+             
+              </div> 
+              <div class="fadein">
+           
+             
+                <div class="ttt"> <img src="images/ll2.jpg"></div>
+                </div>
+                
+        </div>
+       
+        <div class="kk2">
+    
+            <div class="fadein">
+              <div class="ll"> <img src="images/sns_image3.jpg"></div>
+             
+               
+                </div> 
+                <div class="fadein">
+             
+               
+                  <div class="ttt"> <img src="images/sns_image4.jpg"></div>
+                  </div>
+          </div>
+          <div class="fadein">
+             
+               
+              <div class="ll"><img src="images/history_image.jpg"></div>
+              </div>
+      </div>
+            
+            <div class="fadein2">
+           
+             
+                <div class="ll2"><img src="images/product_image.jpg"></div>
+                </div>
+              </div>
+              <div class="sss">
+                  <img src="images/sss.png" />
+              </div>             
+<div class="blue">
+  <div class="boxx">
+      <img src="images/copyright.png" />
+  </div>
+
+</div>
+<div class="f1">
+  <h1>このページを共有する</h1>
+</div>
+<div class="wwwa">
+
+  <div class="scalea">
+      <img src="images/s11.png">
+  </div>
+  <div class="scale-aa">
+    <img src="images/s1.png">
+</div>
+</div>
+<div class="border">
+
+</div>
+<div class="box2">
+  <div class="kuudou2">
+
+  </div>
+<div class="poi">
+
+  <ul class="botom-aa">
+      
+      <li class="botom-a"><a>商品</a></li>
+      <li class="botom-a"><a>キャンペーン・エンタメ</a></li>
+      <li class="botom-a"><a>おでかけ</a></li>
+      <li class="botom-a"><a>レシピ・グルメ</a></li>
+      <li class="botom-a"><a>環境活動</a></li>
+      <li class="botom-a"><a>文化・社会・スポーツ</a></li>
+     </ul>
+     <div class="qqq3">
+        <input type="text" placeholder="サイト内検索" size="20" class="hoge">
+        <div class="oooo">
+          <img src="images/aa2.png" >
+        </div>
+        
+</div>
+</div>
+<div class="poi2">
+
+    <ul class="botom-aa">
+        
+        <li class="botom-a"><a>マイページ</a></li>
+        <li class="botom-a"><a>地域情報</a></li>
+        <li class="botom-a"><a>お問い合わせ・サポート</a></li>
+        <li class="botom-a"><a>企業情報</a></li>
+        <li class="botom-a"><a>Global</a></li>
+        
+       </ul>
+       
+  </div>
+  <div class="poi3">
+
+      <ul class="botom-aa">
+          
+          <li class="botom-a"><a>サイトマップ</a></li>
+          <li class="botom-a"><a>飲食店様へ</a></li>
+          <li class="botom-a"><a>メールマガジン</a></li>
+          <li class="botom-a"><a>ソーシャルメディア公式アカウント</a></li>
+          
+         </ul>
+         
+    </div>
+</div>
+<div class="yuu">
+    <img src="images/yuu.png">
+    <div class="yuuo">
+      <ul>
+
+        <li class="botom-a"><a>ご利用にあたって</a></li>
+        <li class="botom-a"><a>プライバシーポリシー</a></li>
+      </ul>
+    </div>
+</div>
+<div class="last">
+    <h1>COPYRIGHT © SUNTORY BEVERAGE & FOOD LIMITED. ALL RIGHTS RESERVED.</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
