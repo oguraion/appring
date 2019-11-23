@@ -7,47 +7,6 @@
   <link rel="stylesheet" href="css/styles2.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,500,900&amp;subset=japanese" rel="stylesheet">
   <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
-  <script>
-    $(function() {
-         var gnav = $('.gnav');
-         gnav.css('display','none');
-         $('.gnav-btn').on('click', function() {
-           gnav.slideToggle(500);
-           if ($(this).hasClass('is-open')) {
-             $(this).removeClass('is-open');
-           } else {
-             $(this).addClass('is-open');
-           }
-         });
-   });
-   
-     </script>
-     <script>
-      
-       $(window).scroll(function (){
-         $('.fadein').each(function(){
-             var elemPos = $(this).offset().top,
-                 scroll = $(window).scrollTop(),
-                 windowHeight = $(window).height();
-               if (scroll > elemPos - windowHeight + 100){
-                   $(this).addClass('scrollin');
-                 }
-             });
-         });
-       </script>
-       <script>
-      
-          $(window).scroll(function (){
-            $('.fadein2').each(function(){
-                var elemPos = $(this).offset().top,
-                    scroll = $(window).scrollTop(),
-                    windowHeight = $(window).height();
-                  if (scroll > elemPos - windowHeight + 100){
-                      $(this).addClass('scrollin2');
-                    }
-                });
-            });
-          </script>
   
   
   

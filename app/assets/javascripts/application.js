@@ -14,3 +14,42 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery
+
+$(function() {
+  var gnav = $('.gnav');
+  gnav.css('display','none');
+  $('.gnav-btn').on('click', function() {
+    gnav.slideToggle(500);
+    if ($(this).hasClass('is-open')) {
+      $(this).removeClass('is-open');
+    } else {
+      $(this).addClass('is-open');
+    }
+  });
+});
+   
+
+       $(window).scroll(function (){
+         $('.fadein').each(function(){
+             var elemPos = $(this).offset().top,
+                 scroll = $(window).scrollTop(),
+                 windowHeight = $(window).height();
+               if (scroll > elemPos - windowHeight + 100){
+                   $(this).addClass('scrollin');
+                 }
+             });
+         });
+  
+          $(window).scroll(function (){
+            $('.fadein2').each(function(){
+                var elemPos = $(this).offset().top,
+                    scroll = $(window).scrollTop(),
+                    windowHeight = $(window).height();
+                  if (scroll > elemPos - windowHeight + 100){
+                      $(this).addClass('scrollin2');
+                    }
+                });
+            });
+  
+  
