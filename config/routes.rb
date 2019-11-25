@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :products
+  resources :products do
+    post :pay, on: :member
+  end
   
   root 'maps#index'
   get "maps/show"
